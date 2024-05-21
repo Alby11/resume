@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Catppuccin Theme with Blue Accent */
+/* Latte Theme */
+/* Frappe Theme */
+/* Macchiato Theme */
+/* Mocha Theme */
+/* Applying Mocha Theme */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #cdd6f4;
+  background-color: #1e1e2e;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: #181825;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+header h1 {
+  margin: 10px 0 0 0;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #89b4fa;
+  border-bottom: 2px solid #89b4fa;
+  padding-bottom: 5px;
+}
+
+h3, h4 {
+  color: #89b4fa;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: "•";
+  color: #89b4fa;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #89b4fa;
+  margin-top: 40px;
+}
+
+a {
+  color: #89b4fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
