@@ -11,22 +11,14 @@ var dynamodb = new AWS.DynamoDB.DocumentClient();
 
 // Function to update visitor count
 function updateVisitorCount() {
-    var params = {
-        TableName: 'VisitorCount',
-        Key: { Page: 'resume' },
-        UpdateExpression: 'SET #c = if_not_exists(#c, :start) + :inc',
-        ExpressionAttributeNames: { '#c': 'Count' },
-        ExpressionAttributeValues: { ':inc': 1, ':start': 0 },
-        ReturnValues: 'UPDATED_NEW'
-    };
-
-    dynamodb.update(params, function (err, data) {
-        if (err) {
-            console.error("Unable to update item. Error JSON:", JSON.stringify(err, null, 2));
-        } else {
-            document.getElementById('visitor-count').textContent = data.Attributes.Count;
-        }
-    });
+    fetch('https://9j3slqhxwe.execute-api.eu-central-1.amazonaws.com/')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('visitor-count').textContent = data.count;
+        })
+        .catch(error => {
+            console.error("Error fetching visitor count:", error);
+        });
 }
 
 // Call the function to update the visitor count on page load
