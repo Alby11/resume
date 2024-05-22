@@ -11,7 +11,7 @@ var dynamodb = new AWS.DynamoDB.DocumentClient();
 
 // Function to update visitor count
 function updateVisitorCount() {
-    fetch('https://9j3slqhxwe.execute-api.eu-central-1.amazonaws.com/')
+    fetch('https://9j3slqhxwe.execute-api.eu-central-1.amazonaws.com/visitor-count')
         .then(response => response.json())
         .then(data => {
             document.getElementById('visitor-count').textContent = data.count;
