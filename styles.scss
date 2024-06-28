@@ -1,89 +1,116 @@
-$base-color: #eff1f5;
-$text-color: #1e1e2e;
-$accent-color: #1e66f5;
-$link-color: #1e66f5;
-$link-hover-color: darken($link-color, 10%);
-$header-bg-color: #1e1e2e;
-$header-text-color: #eff1f5;
+/* Catppuccin Theme with Mocha Accent */
 
+/* Mocha Theme */
+$base: #1e1e2e;
+$text: #cdd6f4;
+$pink: #f5c2e7;
+$mauve: #cba6f7;
+$red: #f38ba8;
+$maroon: #eba0ac;
+$peach: #fab387;
+$yellow: #f9e2af;
+$green: #a6e3a1;
+$teal: #94e2d5;
+$sky: #89dceb;
+$sapphire: #74c7ec;
+$blue: #89b4fa;
+$lavender: #b4befe;
+$subtext1: #bac2de;
+$subtext0: #a6adc8;
+$overlay2: #9399b2;
+$overlay1: #7f849c;
+$overlay0: #6c7086;
+$surface2: #585b70;
+$surface1: #45475a;
+$surface0: #313244;
+$mantle: #181825;
+$crust: #11111b;
+
+/* Apply Catppuccin Mocha Theme */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: $text-color;
-  background-color: $base-color;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: $base;
+  color: $text;
+  font-family: Arial, sans-serif;
 }
 
 header {
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 2px solid $accent-color;
-
-  img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    color: $accent-color;
-    margin: 10px 0;
-  }
-
-  p {
-    color: $text-color;
-    line-height: 1.5;
-  }
-
-  a {
-    color: $link-color;
-    text-decoration: none;
-
-    &:hover {
-      color: $link-hover-color;
-    }
-  }
+  padding: 20px;
+  background-color: $mantle;
+  color: $lavender;
 }
 
-h2 {
-  color: $accent-color;
-  border-bottom: 2px solid $accent-color;
-  padding-bottom: 5px;
+img {
+  border-radius: 50%;
 }
 
-h3 {
-  color: $text-color;
-  margin-top: 20px;
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: $surface0;
+  border-radius: 10px;
 }
 
-h4 {
-  color: $accent-color;
-  margin-bottom: 5px;
+a {
+  color: $blue;
+  text-decoration: none;
 }
 
-ul {
-  padding-left: 20px;
-
-  li {
-    margin-bottom: 10px;
-  }
+a:hover {
+  color: $sapphire;
 }
 
-#visitor-counter {
-  background-color: $header-bg-color;
-  color: $header-text-color;
-  padding: 10px;
+h1, h2, h3, h4, h5, h6 {
+  color: $lavender;
+}
+
+footer {
   text-align: center;
-  margin-top: 20px;
-  border-radius: 5px;
+  padding: 10px;
+  background-color: $mantle;
+  color: $lavender;
+}
 
-  .visitor-count {
-    font-weight: bold;
-    color: $accent-color;
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid $overlay0;
+}
+
+th {
+  background-color: $surface1;
+}
+
+td {
+  background-color: $surface2;
+}
+
+/* Specific styles for the visitor count */
+.visitor-count {
+  background-color: $peach;
+  color: $crust;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.visitor-count:hover {
+  background-color: $yellow;
+}
+
+/* Adjustments for smaller screen sizes */
+@media (max-width: 768px) {
+  section {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  th, td {
+    padding: 5px;
   }
 }
