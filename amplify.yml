@@ -1,32 +1,15 @@
-version: 1.0
+version: 1
 frontend:
   phases:
     preBuild:
       commands:
-      - npm install
+      - npm install -g sass
     build:
       commands:
-      - npm run build
+      - sass styles.scss styles.css
   artifacts:
-    baseDirectory: build
+    baseDirectory: /
     files:
     - '**/*'
   cache:
-    paths:
-    - node_modules/**/*
-
-backend:
-  phases:
-    preBuild:
-      commands:
-      - npm install
-    build:
-      commands:
-      - npm run build
-  artifacts:
-    baseDirectory: build
-    files:
-    - '**/*'
-  cache:
-    paths:
-    - node_modules/**/*
+    paths: []
