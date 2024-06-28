@@ -114,8 +114,7 @@ function switchLanguage(lang) {
             and software deployments.
           </li>
           <li>
-            <strong>Skills:</strong> System Architecture, Network
-            Administration, Red Hat Linux, Windows Server, Virtualization,
+            <strong>Skills:</strong> System Architecture, Network Administration, Red Hat Linux, Windows Server, Virtualization,
             Domain Architecture, Workstation Administration, Automation.
           </li>
         </ul>
@@ -132,7 +131,7 @@ function switchLanguage(lang) {
       <section>
         <h2>Education</h2>
         <p>
-          <strong>Master's Degree in Political Science with an emphasis on General Economics</strong>
+          <strong>Master's Degree in Political Science</strong>
           <br />Università degli Studi di Pavia | Graduated in 2006
         </p>
       </section>
@@ -163,7 +162,7 @@ function switchLanguage(lang) {
       <section>
         <h2>Riassunto Professionale</h2>
         <p>
-          Manager Senior delle Operazioni e Monitoraggio IT con oltre 17 anni di
+          IT Operations and Monitoring Manager con oltre 17 anni di
           esperienza nell'architettura dei sistemi, ingegneria e amministrazione.<br />
           Esperto in ambienti Linux e Windows, con un forte focus su DevOps, sicurezza
           informatica e tecnologie cloud.<br />
@@ -178,24 +177,24 @@ function switchLanguage(lang) {
       <section>
         <h2>Competenze Chiave</h2>
         <ul>
-          <li><strong>Leadership del Team</strong></li>
-          <li><strong>Architettura e Ingegneria dei Sistemi</strong></li>
-          <li><strong>Relazioni a Livello C</strong></li>
-          <li><strong>Amministrazione Linux e Windows</strong></li>
-          <li><strong>VMware e Virtualizzazione</strong></li>
-          <li><strong>DevOps e CI/CD Pipelines</strong></li>
-          <li><strong>Appalti IT e Negoziazione di Contratti</strong></li>
-          <li><strong>Sicurezza Informatica e Conformità (ISO 27001, GDPR)</strong></li>
-          <li><strong>Amministrazione di Rete</strong></li>
+          <li><strong>Team Leadership</strong></li>
+          <li><strong>Systems Architecture & Engineering</strong></li>
+          <li><strong>C-Level Relationships</strong></li>
+          <li><strong>Linux & Windows Administration</strong></li>
+          <li><strong>VMware & Virtualization</strong></li>
+          <li><strong>DevOps & CI/CD Pipelines</strong></li>
+          <li><strong>IT Procurement and Contract Negotiation</strong></li>
+          <li><strong>Cybersecurity & Compliance (ISO 27001, GDPR)</strong></li>
+          <li><strong>Network Administration</strong></li>
           <li><strong>Cloud Computing (AWS, Azure)</strong></li>
-          <li><strong>Gestione Progetti</strong></li>
+          <li><strong>Project Management</strong></li>
         </ul>
       </section>
 
       <section>
         <h2>Esperienza Professionale</h2>
         <h3>Fratelli Carli S.p.A. Società Benefit</h3>
-        <h4>Manager delle Operazioni e Monitoraggio IT</h4>
+        <h4>IT Operations and Monitoring Manager</h4>
         <p><em>Ottobre 2018 - Presente | Imperia, Liguria, Italia</em></p>
         <ul>
           <li>
@@ -226,12 +225,12 @@ function switchLanguage(lang) {
             garantendo il completamento tempestivo e di successo dei progetti.
           </li>
           <li>
-            Membro chiave del Team ISMS per la conformità ISO 27001, partecipando a riunioni mensili sulla sicurezza
+            Membro chiave del Team SGSI per la conformità ISO 27001, partecipando a riunioni mensili sulla sicurezza
             per discutere di incidenti, cambiamenti e problemi, e contribuendo al miglioramento continuo delle misure di sicurezza.
           </li>
           <li>
-            <strong>Competenze:</strong> DevOps, Strategia IT, Sicurezza Informatica, Leadership, Negoziazione Contratti IT,
-            Gestione Priorità, Microservizi, Approvvigionamento IT.
+            <strong>Competenze:</strong> DevOps, IT Strategy, Cybersecurity, Leadership, IT Contract Negotiation, Priority Management,
+            Microservices, IT Procurement.
           </li>
         </ul>
 
@@ -243,7 +242,7 @@ function switchLanguage(lang) {
             Gestito oltre 100 server virtuali e fisici (Linux e Windows) su hypervisor VMware vSphere,
             garantendo alta disponibilità, prestazioni e sicurezza.
           </li>
-          <li>Responsabile come Ingegnere Certificato Red Hat (RHCE).</li>
+          <li>Responsabile come Red Hat Certified Engineer (RHCE).</li>
           <li>
             Implementato e gestito la configurazione, manutenzione e supporto dell'infrastruttura cliente,
             garantendo prestazioni ottimali e affidabilità dei dispositivi degli utenti finali.
@@ -260,8 +259,8 @@ function switchLanguage(lang) {
             Assistito nella gestione di progetti IT interni, come migrazioni di sistemi e distribuzioni di software.
           </li>
           <li>
-            <strong>Competenze:</strong> Architettura di Sistema, Amministrazione di Rete, Linux Red Hat, Windows Server,
-            Virtualizzazione, Architettura di Dominio, Amministrazione Workstation, Automazione.
+            <strong>Competenze:</strong> System Architecture, Network Administration, Red Hat Linux, Windows Server, Virtualization,
+            Domain Architecture, Workstation Administration, Automation.
           </li>
         </ul>
       </section>
@@ -269,9 +268,9 @@ function switchLanguage(lang) {
       <section>
         <h2>Certificazioni</h2>
         <ul>
-          <li><strong>Ingegnere Certificato Red Hat (RHCE)</strong></li>
+          <li><strong>Red Hat Certified Engineer (RHCE)</strong></li>
           <li>
-            <strong>Certified Information Systems Security Professional (CISSP) - Candidato</strong>
+            <strong>Certified Information Systems Security Professional (CISSP) - Candidate</strong>
           </li>
         </ul>
       </section>
@@ -279,7 +278,7 @@ function switchLanguage(lang) {
       <section>
         <h2>Istruzione</h2>
         <p>
-          <strong>Laurea Magistrale in Scienze Politiche con indirizzo in Economia Generale</strong>
+          <strong>Laurea Magistrale in Scienze Politiche</strong>
           <br />Università degli Studi di Pavia | Laureato nel 2006
         </p>
       </section>
@@ -425,7 +424,7 @@ function switchLanguage(lang) {
       <section>
         <h2>Éducation</h2>
         <p>
-          <strong>Master en Sciences Politiques avec une spécialisation en Économie Générale</strong>
+          <strong>Master en Sciences Politiques</strong>
           <br />Università degli Studi di Pavia | Diplômé en 2006
         </p>
       </section>
@@ -554,7 +553,7 @@ function switchLanguage(lang) {
         <ul>
           <li><strong>Red Hat Certified Engineer (RHCE)</strong></li>
           <li>
-            <strong>Certified Information Systems Security Professional (CISSP) - Kandidat</strong>
+            <strong>Certified Information Systems Security Professional (CISSP) - Candidate</strong>
           </li>
         </ul>
       </section>
@@ -562,7 +561,7 @@ function switchLanguage(lang) {
       <section>
         <h2>Bildung</h2>
         <p>
-          <strong>Master-Abschluss in Politikwissenschaft mit Schwerpunkt auf Allgemeine Wirtschaft</strong>
+          <strong>Master-Abschluss in Politikwissenschaft</strong>
           <br />Università degli Studi di Pavia | Abgeschlossen 2006
         </p>
       </section>
