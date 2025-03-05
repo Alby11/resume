@@ -331,28 +331,19 @@
     </details>
   </div>
 
-  <!-- Inline script to ensure visitor count is updated after DOM is loaded -->
+  <!-- Inline script to initialize after DOM loads -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (typeof updateVisitorCount === "function") {
-        updateVisitorCount();
-      }
-    });
-  </script>
-
-  <!-- Light/Dark Mode Toggle Script -->
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-
-    window.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener("DOMContentLoaded", function () {
+      // updateVisitorCount is already called in visitor-counter.js after DOMContentLoaded
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
       }
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+      });
     });
   </script>
 </body>
