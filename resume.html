@@ -331,6 +331,15 @@
     </details>
   </div>
 
+  <!-- Inline script to ensure visitor count is updated after DOM is loaded -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof updateVisitorCount === "function") {
+        updateVisitorCount();
+      }
+    });
+  </script>
+
   <!-- Light/Dark Mode Toggle Script -->
   <script>
     const themeToggle = document.getElementById('theme-toggle');
