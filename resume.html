@@ -129,6 +129,9 @@
       background-color: #005a9e;
     }
   </style>
+  <!-- Load AWS SDK before visitor-counter.js -->
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.985.0.min.js"></script>
+  <script src="visitor-counter.js" defer></script>
 </head>
 
 <body>
@@ -143,7 +146,13 @@
   <div class="container">
     <header>
       <h1>Alberto Tallone</h1>
-      <p>Citizenship: Italian | Location: Italy | Relocating to Switzerland (1-month notice)</p>
+      <p>
+        Citizenship: Italian | Location: Italy | Relocating to Switzerland (1-month notice)
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/albertotallone/" target="_blank" rel="noopener noreferrer">LinkedIn
+          Profile</a>
+      </p>
     </header>
 
     <!-- Professional Summary -->
@@ -322,10 +331,6 @@
     </details>
   </div>
 
-  <!-- Include Visitor Counter Script -->
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.985.0.min.js"></script>
-  <script src="visitor-counter.js" defer></script>
-
   <!-- Light/Dark Mode Toggle Script -->
   <script>
     const themeToggle = document.getElementById('theme-toggle');
@@ -333,6 +338,7 @@
       document.body.classList.toggle('dark-mode');
       localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
+
     window.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
@@ -341,7 +347,5 @@
     });
   </script>
 </body>
-
-</html>
 
 </html>
