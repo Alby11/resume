@@ -1,232 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alberto Tallone - Resume</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.985.0.min.js"></script>
-    <script src="visitor-counter.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <a href="https://www.linkedin.com/in/albertotallone">
-          <img
-            src="https://media.licdn.com/dms/image/C4E03AQGxSN7cGs_KUQ/profile-displayphoto-shrink_800_800/0/1521629925043?e=1724889600&v=beta&t=rEa3jlA5wUm_FKXkEp744iRYuix1MvZddxGl-dXs2Js"
-            alt="Profile Photo"
-            width="100"
-            height="100"
-            class="profile-photo"
-          />
-        </a>
-        <h1>Alberto Tallone</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alberto Tallone - Resume</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Collapsible sections styling */
+    details {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    details summary {
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    details[open] {
+      background-color: #e9e9e9;
+    }
+
+    .section-content {
+      padding: 10px 20px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Visitor counter styling */
+    #visitor-counter-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* Light/Dark toggle button styling */
+    #theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #0078d7;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #theme-toggle:hover {
+      background-color: #005a9e;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Light/Dark Mode Toggle Button -->
+  <button id="theme-toggle">Toggle Dark Mode</button>
+
+  <!-- Visitor Counter Display -->
+  <div id="visitor-counter-container">
+    Visitor Count: <span id="visitor-counter">Loading...</span>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Alberto Tallone</h1>
+      <p>Citizenship: Italian | Location: Italy | Relocating to Switzerland (1-month notice)</p>
+    </header>
+
+    <!-- Professional Summary -->
+    <details>
+      <summary>Professional Summary</summary>
+      <div class="section-content">
         <p>
-          Salita Poggio Milano 9<br />Imperia, Liguria, Italy<br />
-          Email:
-          <a href="mailto:albertotallone@gmail.com">albertotallone@gmail.com</a>
-          <br />
-          Phone: <a href="tel:+393347549439">+39 3347549439</a>
-          <br />
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/albertotallone"
-            >www.linkedin.com/in/albertotallone</a
-          >
+          Results-driven <strong>System Architect &amp; IT Leader</strong> with <strong>18 years of experience</strong>
+          in <strong>enterprise IT infrastructure, cloud platforms, automation, security, and VoIP solutions</strong>.
+          Expertise in:
         </p>
-      </header>
-
-      <section>
-        <h2>Professional Summary</h2>
+        <ul>
+          <li><strong>Cloud &amp; Virtualization:</strong> AWS, Azure, Genesys Cloud, VMware, Nutanix</li>
+          <li><strong>Security &amp; Compliance:</strong> ISO 27001, GDPR, IAM Governance, Conditional Access,
+            SentinelOne XDR</li>
+          <li><strong>Automation &amp; DevOps:</strong> CI/CD, Ansible, Docker, Bitbucket</li>
+          <li><strong>Networking &amp; VoIP:</strong> AudioCodes (V)SBC, SIP Trunking, Genesys Cloud, TVox, ISDN-to-VoIP
+            Migration</li>
+          <li><strong>MDM &amp; Endpoint Security:</strong> Microsoft Intune (Android/iOS), SOTI MobiControl,
+            ManageEngine</li>
+          <li><strong>IT Leadership &amp; Strategy:</strong> Cost optimization (€300K+ saved), vendor management,
+            C-level advisory</li>
+        </ul>
         <p>
-          Senior IT Operations & Monitoring Manager with over 17 years of
-          experience in systems architecture, engineering, and
-          administration.<br />
-          Expert in Linux and Windows environments, with a strong focus on
-          DevOps, cybersecurity, and cloud technologies.<br />
-          Proven track record in leading teams, enhancing IT operations, and
-          implementing innovative solutions to drive efficiency and
-          compliance.<br />
-          Experienced in managing internal projects and playing a key role in
-          security operations and compliance initiatives.<br />
-          Enthusiastic about leveraging advanced technologies to support
-          business objectives.
+          Proven record in <strong>reducing costs, improving security posture, and driving IT transformations</strong>
+          that align with business goals and operational efficiency.
         </p>
-      </section>
+      </div>
+    </details>
 
-      <section>
-        <h2>Core Competencies</h2>
+    <!-- Professional Experience -->
+    <details>
+      <summary>Professional Experience</summary>
+      <div class="section-content">
+        <h3>System Architect &amp; IT Operations Manager</h3>
+        <p><em>Fratelli Carli S.p.A. Società Benefit | Imperia, Italy | 2019 – Present</em></p>
         <ul>
-          <li><strong>Team Leadership</strong></li>
-          <li><strong>Systems Architecture & Engineering</strong></li>
-          <li><strong>C-Level Relationships</strong></li>
-          <li><strong>Linux & Windows Administration</strong></li>
-          <li><strong>VMware & Virtualization</strong></li>
-          <li><strong>DevOps & CI/CD Pipelines</strong></li>
-          <li><strong>IT Procurement and Contract Negotiation</strong></li>
-          <li><strong>Cybersecurity & Compliance (ISO 27001, GDPR)</strong></li>
-          <li><strong>Network Administration</strong></li>
-          <li><strong>Cloud Computing (AWS, Azure)</strong></li>
-          <li><strong>Project Management</strong></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Professional Experience</h2>
-        <h3>Fratelli Carli S.p.A. Società Benefit</h3>
-        <h4>IT Operations and Monitoring Manager</h4>
-        <p><em>October 2018 - Present | Imperia, Liguria, Italy</em></p>
-        <ul>
-          <li>
-            Lead a team responsible for 1st/2nd level support and system
-            monitoring, ensuring optimal performance, security, and availability
-            of IT systems.
+          <li><strong>IT Strategy &amp; Infrastructure Modernization:</strong> Led <strong>20+ major IT
+              projects</strong>, transitioning <strong>IBM PureFlex to Nutanix</strong>, reducing <strong>hardware
+              failure rates by 50%</strong>, and saving <strong>€100K annually</strong>.</li>
+          <li>Led and mentored a <strong>3-member</strong> IT team, improving <strong>incident resolution by
+              35%</strong> for <strong>600+ clients</strong> and reducing <strong>downtime by 25%</strong>.</li>
+          <li><strong>Security &amp; Compliance:</strong> Enforced <strong>ISO 27001 &amp; GDPR</strong> standards,
+            implementing <strong>multi-tier access controls &amp; real-time monitoring</strong>, reducing <strong>audit
+              failures by 30%</strong>.</li>
+          <li><strong>VoIP &amp; Contact Center Migration:</strong> Spearheaded <strong>ISDN-to-VoIP migration</strong>,
+            working with <strong>Fastweb, TIM</strong> to ensure business continuity for mission-critical contact center
+            operations.</li>
+          <li><strong>Microsoft Intune MDM Deployment:</strong> Implemented Microsoft Intune for ~70 Samsung devices,
+            managing Android/iOS compliance, remote app deployment, and Kiosk Mode.</li>
+          <li><strong>Azure OAuth &amp; Authentication Security:</strong> Configured OAuth authentication failures in
+            TVox Azure AD integration, ensuring seamless MFA &amp; Conditional Access enforcement.</li>
+          <li><strong>Retail IT Transformation:</strong> Designed IT infrastructure across <strong>23 stores</strong>,
+            integrating digital signage, multimedia distribution, and Sensormatic analytics, increasing revenue by 25%.
           </li>
-          <li>
-            Pioneered the adoption of CI/CD pipelines, containerization, and
-            Mobile Device Management (MDM), significantly improving deployment
-            processes and operational reliability.
-          </li>
-          <li>
-            Strengthened compliance with ISO 27001 and GDPR, fortifying data
-            protection frameworks and minimizing security risks.
-          </li>
-          <li>
-            Engaged directly with C-level executives (COO, CFO, CEO, CMO) to
-            align IT strategies with business objectives, ensuring robust
-            support for corporate goals.
-          </li>
-          <li>
-            Supported contract negotiations and managed IT hardware/software
-            procurement.
-          </li>
-          <li>
-            Achieved substantial cost savings by strategically migrating from
-            high-cost specialized devices to more affordable, yet effective,
-            consumer alternatives, resulting in over 80% cost reduction on
-            mobile devices.
-          </li>
-          <li>
-            Managed internal projects, including the implementation of new
-            technologies and system upgrades, ensuring timely and successful
-            project completion.
-          </li>
-          <li>
-            Core member of the ISMS Team for ISO 27001 compliance, participating
-            in monthly security meetings to discuss incidents, changes, and
-            problems, and contribute to the continuous improvement of security
-            measures.
-          </li>
-          <li>
-            <strong>Skills:</strong> DevOps, IT Strategy, Cybersecurity,
-            Leadership, IT Contract Negotiation, Priority Management,
-            Microservices, IT Procurement.
-          </li>
+          <li><strong>Incident Resolution &amp; System Monitoring:</strong> Deployed ManageEngine OpManager for
+            real-time monitoring &amp; predictive failure analytics, reducing critical downtime by 35%.</li>
+          <li><strong>IT Cost Optimization &amp; Procurement:</strong> Achieved <strong>€300K+ in IT cost
+              reductions</strong> over 3 years through vendor negotiations and technology upgrades.</li>
         </ul>
 
-        <h3>Fratelli Carli S.p.A. Società Benefit</h3>
-        <h4>System Administrator</h4>
-        <p><em>April 2007 - October 2018 | Imperia, Liguria, Italy</em></p>
+        <h3>System Engineer</h3>
+        <p><em>Fratelli Carli S.p.A. Società Benefit | Imperia, Italy | 2007 – 2019</em></p>
         <ul>
-          <li>
-            Managed over 100 virtual and physical servers (Linux and Windows) on
-            VMware vSphere hypervisor, ensuring high availability, performance,
-            and security.
-          </li>
-          <li>Held accountability as a Red Hat Certified Engineer (RHCE).</li>
-          <li>
-            Implemented and managed the configuration, maintenance, and support
-            of client infrastructure, ensuring optimal performance and
-            reliability of end-user devices.
-          </li>
-          <li>
-            Administered Active Directory services, including user account
-            management, group policies, and access control.
-          </li>
-          <li>
-            Implemented and managed client and patch management solutions to
-            ensure systems were up-to-date and secure, reducing vulnerabilities.
-          </li>
-          <li>
-            Assisted in managing internal IT projects, such as system migrations
-            and software deployments.
-          </li>
-          <li>
-            <strong>Skills:</strong> System Architecture, Network
-            Administration, Red Hat Linux, Windows Server, Virtualization,
-            Domain Architecture, Workstation Administration, Automation.
-          </li>
+          <li><strong>Cloud &amp; Virtualization Strategy:</strong> Managed <strong>100+ VMware vSphere
+              servers</strong>, improving scalability and reducing outages by 40%.</li>
+          <li><strong>IT Security Enhancements:</strong> Configured Active Directory RBAC, reducing unauthorized access
+            by 50%.</li>
+          <li><strong>Global IT Expansion:</strong> Engineered warehouse IT infrastructure for foreign markets, now
+            generating ~40% of total company revenue.</li>
+          <li><strong>Retail &amp; Remote Operations:</strong> Ensured 99.9% uptime across warehouses and retail
+            locations using Citrix &amp; RemoteApp.</li>
+          <li><strong>Cost-Saving Initiatives:</strong> Led bare-metal to VMware migration, reducing hardware costs by
+            €200K annually.</li>
         </ul>
-      </section>
+      </div>
+    </details>
 
-      <section>
-        <h2>Certifications</h2>
+    <!-- Education & Certifications -->
+    <details>
+      <summary>Education &amp; Certifications</summary>
+      <div class="section-content">
         <ul>
           <li><strong>Red Hat Certified Engineer (RHCE)</strong></li>
-          <li>
-            <strong
-              >Certified Information Systems Security Professional (CISSP) -
-              Candidate</strong
-            >
-          </li>
+          <li><strong>M.A. in Political Science</strong>, Università degli Studi di Pavia (2006)</li>
         </ul>
-      </section>
+      </div>
+    </details>
 
-      <section>
-        <h2>Education</h2>
-        <p>
-          <strong>Master's Degree in Political Science</strong>
-          <br />Università degli Studi di Pavia | Graduated in 2006
-        </p>
-      </section>
-
-      <section>
-        <h2>Projects and Achievements</h2>
+    <!-- Technical Skills -->
+    <details>
+      <summary>Technical Skills</summary>
+      <div class="section-content">
         <ul>
-          <li>
-            <strong>Cost Optimization:</strong> Led a project that achieved over
-            80% cost reduction by migrating from specialized mobile devices to
-            consumer alternatives.
-          </li>
-          <li>
-            <strong>Compliance Improvement:</strong> Enhanced IT security
-            frameworks to achieve compliance with ISO 27001 and GDPR standards,
-            significantly improving organizational data protection.
-          </li>
-          <li>
-            <strong>DevOps Implementation:</strong> Introduced and managed CI/CD
-            pipelines and containerization, improving deployment processes and
-            operational reliability.
-          </li>
+          <li><strong>Systems &amp; Virtualization:</strong> VMware vSphere, Nutanix, Linux (RHEL, Ubuntu), Windows
+            Server</li>
+          <li><strong>Cloud &amp; Automation:</strong> AWS, Azure, Genesys Cloud, Docker, CI/CD, Ansible, Bitbucket</li>
+          <li><strong>Networking &amp; VoIP:</strong> Genesys, AudioCodes (V)SBC, SIP Trunking, TVox, ISDN-to-VoIP
+            Migration</li>
+          <li><strong>Security &amp; Compliance:</strong> ISO 27001, GDPR, IAM Governance, Conditional Access, DR and
+            BC, SentinelOne XDR, Nessus</li>
+          <li><strong>Monitoring &amp; Networking:</strong> ManageEngine OpManager, Fortinet (FortiGate, FortiWiFi,
+            FortiSwitch)</li>
+          <li><strong>Scripting &amp; Development:</strong> Bash, PowerShell, Python</li>
+          <li><strong>Backup &amp; Disaster Recovery:</strong> Cohesity, ArcServe</li>
+          <li><strong>MDM &amp; Endpoint Security:</strong> Microsoft Intune (Android/iOS), SOTI MobiControl,
+            ManageEngine Endpoint Central</li>
+          <li><strong>IT Leadership &amp; Strategy:</strong> IT Procurement, Vendor Management, C-Level Advisory, Cost
+            Optimization</li>
         </ul>
-      </section>
+      </div>
+    </details>
 
-      <section>
-        <h2>Languages</h2>
+    <!-- Selected Projects -->
+    <details>
+      <summary>Selected Projects</summary>
+      <div class="section-content">
         <ul>
-          <li><strong>Italian: </strong>Native proficiency</li>
-          <li><strong>English: </strong>Full professional proficiency</li>
-          <li><strong>French: </strong>Professional working proficiency</li>
+          <li><strong>Ansible for Linux Administration (Ongoing):</strong> Automated system configuration, cutting
+            manual intervention time by 30%.</li>
+          <li><strong>ISDN-to-VoIP Migration (Ongoing):</strong> Led Genesys Cloud SIP trunking transition,
+            collaborating with ISPs (Fastweb, TIM, Colt) and leveraging Telenia's TVox.</li>
+          <li><strong>Cyberint Security Enhancements (Ongoing):</strong> Implementing proactive threat detection &amp;
+            brand protection.</li>
+          <li><strong>z/Linux on System-z &amp; JBoss Hosting:</strong> Built RHEL (s390x) on System-z to host Java apps
+            on JBoss, later migrated to VMware.</li>
+          <li><strong>Deployment of Tomcat on RHEL for Java Web Services:</strong> Hosted Java applications on RHEL,
+            enabling data exchange between mainframe and distributed environments.</li>
+          <li><strong>Azure OAuth Security Enhancements:</strong> Resolved OAuth authentication failures, fixing SAML
+            claims mismatches in TVox Azure AD integration.</li>
+          <li><strong>VMware Infrastructure Migration:</strong> Upgraded to VMware, improving scalability &amp;
+            performance.</li>
+          <li><strong>Nutanix HCI Implementation:</strong> Replaced bare-metal hardware with Nutanix, cutting buyout
+            costs by 20% and expanding hypervisor options.</li>
+          <li><strong>DevOps Implementation:</strong> Deployed CI/CD pipelines, reducing errors by 40% and improving
+            deployment speed.</li>
+          <li><strong>Active Directory Authorization Tiering:</strong> Designed multi-tier access controls, reducing
+            privilege escalation risks.</li>
+          <li><strong>ISO 27001 &amp; GDPR Compliance Enhancement:</strong> Strengthened IT security frameworks,
+            ensuring full compliance.</li>
+          <li><strong>COVID-19 Remote Work Enablement:</strong> Deployed 250+ remote workstations in 1 week, ensuring
+            business continuity.</li>
+          <li><strong>Heidelberg Printing Workflow Setup:</strong> Integrated Mac clients, CTP systems, and Speedmaster
+            presses, optimizing print production efficiency by 30%.</li>
+          <li><strong>International Shipping Expansion:</strong> Engineered IT for global markets, driving 30% revenue
+            growth.</li>
+          <li><strong>Multimedia &amp; Digital Signage Solutions:</strong> Developed two proprietary A/V distribution
+            systems to centrally manage interactive &amp; static content across retail locations, enhancing customer
+            engagement and in-store experience.</li>
+          <li><strong>Customer Behavior Analytics with Sensormatic:</strong> Integrated Johnson Controls Tyco
+            Sensormatic ingress/egress tracking, linking foot traffic analytics with sales data to optimize store
+            performance and marketing strategies.</li>
         </ul>
-      </section>
+      </div>
+    </details>
 
-      <section>
-        <h2>Privacy Statement</h2>
-        <p>
-          <em
-            >I hereby consent to the processing of my personal data for the
-            purpose of recruitment and selection.<br />
-            This consent is provided in accordance with the applicable data
-            protection laws, including the General Data Protection Regulation
-            (GDPR).</em
-          >
+    <!-- Languages -->
+    <details>
+      <summary>Languages</summary>
+      <div class="section-content">
+        <p><strong>Italian</strong>: Native | <strong>English</strong>: Fluent | <strong>French</strong>: Intermediate |
+          <strong>German</strong>: Beginner
         </p>
-      </section>
-    </div>
-    <div id="visitor-counter" class="visitor-counter">
-      <p>
-        This resume is on AWS Amplify - Visitor Count:
-        <span id="visitor-count" class="visitor-count">Loading...</span>
-      </p>
-    </div>
-  </body>
+      </div>
+    </details>
+
+    <!-- Consent Statement -->
+    <details>
+      <summary>Consent Statement</summary>
+      <div class="section-content">
+        <p>
+          I hereby consent to the processing of my personal data for recruitment and selection purposes in accordance
+          with GDPR and other applicable data protection laws.
+        </p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Include Visitor Counter Script -->
+  <script src="visitor-counter.js" defer></script>
+
+  <!-- Light/Dark Mode Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    });
+  </script>
+</body>
+
 </html>

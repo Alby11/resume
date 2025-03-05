@@ -3,13 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
-      - npm install -g sass
+      # - npm install -g sass
     build:
       commands:
-      - sass styles.scss styles.css
+      # - sass styles.scss styles.css
   artifacts:
     baseDirectory: /
     files:
-    - '**/*'
+      - "**/*"
   cache:
     paths: []
