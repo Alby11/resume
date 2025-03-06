@@ -11,15 +11,20 @@ var dynamodb = new AWS.DynamoDB.DocumentClient();
 
 // Function to update visitor count
 function updateVisitorCount() {
+    var counterElem = document.getElementById('visitor-counter');
+    if (!counterElem) {
+        console.error("Visitor counter element not found");
+        return;
+    }
     fetch('https://9j3slqhxwe.execute-api.eu-central-1.amazonaws.com/visitor-count')
         .then(response => response.json())
         .then(data => {
-            document.getElementById('visitor-count').textContent = data.count;
+            counterElem.textContent = data.count;
         })
         .catch(error => {
             console.error("Error fetching visitor count:", error);
         });
 }
 
-// Call the function to update the visitor count on page load
-updateVisitorCount();
+document.addEventListener("DOMContentLoaded", updateVisitorCount);
+
