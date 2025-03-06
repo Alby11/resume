@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alberto Tallone - Resume</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alberto Tallone - Resume</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Load AWS SDK (for visitor-counter.js) and Marked.js to convert Markdown -->
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.985.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <!-- Load external JS files -->
-  <script src="visitor-counter.js" defer></script>
-  <script src="script.js" defer></script>
-</head>
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="styles.css" />
 
-<body>
-  <!-- Dark Mode Toggle in lower left -->
-  <button id="theme-toggle">Toggle Dark Mode</button>
+    <!-- Load AWS SDK (for visitor-counter.js) -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.985.0.min.js"></script>
+    <!-- Load Marked.js (for converting .md to HTML) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <!-- Visitor Counter Display in lower right -->
-  <div id="visitor-counter-container">
-    Visitor Count: <span id="visitor-counter">Loading...</span>
-  </div>
+    <!-- Load your custom JS files -->
+    <script src="visitor-counter.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Dark Mode Toggle in lower left -->
+    <button id="theme-toggle">Toggle Dark Mode</button>
 
-  <div class="container">
-    <header>
-      <h1>Alberto Tallone</h1>
-      <p>
-        Citizenship: Italian | Location: Italy | Relocating to Switzerland (1-month notice)
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/albertotallone/" target="_blank" rel="noopener noreferrer">LinkedIn
-          Profile</a>
-      </p>
-    </header>
-    <!-- The content will be loaded from content.md -->
-    <div id="content">
-      <!-- Resume content will be inserted here -->
+    <!-- Visitor Counter Display in lower right -->
+    <div id="visitor-counter-container">
+      Visitor Count: <span id="visitor-counter">Loading...</span>
     </div>
-  </div>
-</body>
 
+    <div class="container">
+      <!-- The actual resume content will be loaded here from content.md -->
+      <div id="resume-content"></div>
+    </div>
+  </body>
 </html>
