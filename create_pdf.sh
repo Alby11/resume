@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 pandoc content.md -o alberto_tallone_resume.pdf \
   --pdf-engine=xelatex \
