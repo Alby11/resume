@@ -1,6 +1,6 @@
 # **Alberto Tallone**
 
-[albertotallone@gmail.com](mailto:albertotallone@gmail.com) | [+39 334 754 9439](tel:+393347549439) | [LinkedIn](https://www.linkedin.com/in/albertotallone/) | [GitHub](https://github.com/alby11)
+[LinkedIn](https://www.linkedin.com/in/albertotallone/) | [GitHub](https://github.com/alby11)
 
 **Citizenship**: Italian | **Location**: Italy | **Relocating to Switzerland (1-month notice)**
 
@@ -25,7 +25,8 @@ Proven record in **reducing costs, improving security posture, and driving IT tr
 <details>
   <summary><strong>Professional Experience</strong></summary>
 
-### **System Architect & IT Operations Manager**  
+### **System Architect & IT Operations Manager**
+
 **Fratelli Carli S.p.A. Società Benefit** | **Imperia, Italy** | **2019 – Present**
 
 - **IT Strategy & Infrastructure Modernization:** Led **20+ major IT projects**, transitioning **IBM PureFlex to Nutanix**, reducing **hardware failure rates by 50%**, and saving **€100K annually**.
@@ -38,7 +39,8 @@ Proven record in **reducing costs, improving security posture, and driving IT tr
 - **Incident Resolution & System Monitoring:** Deployed **ManageEngine OpManager** for real-time monitoring & predictive failure analytics, reducing **critical downtime by 35%**.
 - **IT Cost Optimization & Procurement:** Achieved **€300K+** in IT cost reductions over 3 years through **vendor negotiations** and **technology upgrades**.
 
-### **System Engineer**  
+### **System Engineer**
+
 **Fratelli Carli S.p.A. Società Benefit** | **Imperia, Italy** | **2007 – 2019**
 
 - **Cloud & Virtualization Strategy:** Managed **100+ VMware vSphere servers**, improving **scalability** and reducing outages by **40%**.
@@ -107,3 +109,4 @@ Proven record in **reducing costs, improving security posture, and driving IT tr
 _I hereby consent to the processing of my personal data for recruitment and selection purposes in accordance with GDPR and other applicable data protection laws._
 
 </details>
+
