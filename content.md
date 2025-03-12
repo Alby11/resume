@@ -31,11 +31,12 @@ Proven record in **reducing costs, improving security posture, and driving IT tr
 
 - **IT Infrastructure & Cloud Management:** Designed and managed **scalable enterprise infrastructure**, leading **Nutanix HCI adoption** and **cloud integrations (Azure, AWS, Genesys Cloud, Salesforce)**.
 - **Security & Compliance:** Implemented **ISO 27001 & GDPR controls**, reducing **audit failures by 30%** through **multi-tier access security & real-time threat monitoring**.
+- **Support Team Leadership:** Lead a **3-member IT support team**, providing **technical oversight, process improvements, and troubleshooting guidance** across **workstations, industrial printing, MDM, and monitoring**.
+- **System Monitoring & Incident Response:** Deployed **ManageEngine OpManager** to enhance **real-time monitoring**, reducing **critical downtime by 35%**.
+- **IT Cost Optimization & Procurement:** Negotiated **vendor contracts** and **scalable solutions**, achieving **€500K+ in IT cost reductions**.
 - **VoIP & Contact Center Solutions:** Led **ISDN-to-VoIP migration**, working with **Fastweb and TIM** for **direct SIP trunking, Genesys Cloud and Salesforce integration**.
 - **Microsoft Intune MDM Deployment:** Rolled out **Microsoft Intune for ~70 Samsung devices**, ensuring **Android/iOS compliance, remote app deployment & kiosk mode**.
 - **Retail IT Infrastructure:** Designed **IT systems across 23 retail stores**, integrating **Sensormatic analytics, digital signage, and multimedia systems**, increasing **revenue by 25%**.
-- **IT Cost Optimization & Procurement:** Negotiated **vendor contracts** and **scalable solutions**, achieving **€500K+ in IT cost reductions**.
-- **System Monitoring & Incident Response:** Deployed **ManageEngine OpManager** to enhance **real-time monitoring**, reducing **critical downtime by 35%**.
 
 ### **System Engineer**
 
